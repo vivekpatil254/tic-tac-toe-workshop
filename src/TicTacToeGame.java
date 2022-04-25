@@ -11,6 +11,7 @@ public class TicTacToeGame {
 		//object.
 		display();
 		allowInput();
+		showBoard();
 	}
 	
 	public static void assign()
@@ -20,6 +21,7 @@ public class TicTacToeGame {
 			arr[i]=' ';
 		}
 	}
+	
 	public static void display()
 	{
 		for (int i=1;i<=10;i++)
@@ -27,6 +29,7 @@ public class TicTacToeGame {
 			System.out.println(arr[i]);
 		}
 	}
+	
 	public static void allowInput() 
 	{
 		char user1Input;
@@ -48,4 +51,25 @@ public class TicTacToeGame {
 		System.out.println("Player 1 Input : "+user1Input);
 		System.out.println("Player 2 Input : "+user2Input);
 	}
+	
+	public static void showBoard()
+	{
+		
+		System.out.println("     |            |      ");
+		System.out.println("     |            |      ");
+		System.out.println("-----|------------|----- ");
+		System.out.println("     |            |      ");
+		System.out.println("     |            |      ");
+		System.out.println("-----|------------|----- ");
+		System.out.println("     |            |      ");
+		System.out.println("     |            |      ");
+		
+	}
+	
+
+
+
+
+
+
 }
