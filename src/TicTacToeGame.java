@@ -29,13 +29,23 @@ public class TicTacToeGame {
 	}
 	public static void allowInput() 
 	{
-		char input;
+		char user1Input;
+		char user2Input;
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("enter the input 'X' or 'O'");
-		do {
-		input = scanner.next().charAt(0);
-		System.out.println(input);
-		}while(input!='X'||input!='O'||input!='x'||input!='o');	
+		//System.out.println("Enter the input 'X' or 'O'");
+		while(true){
+				System.out.println("Enter the input 'X' or 'O'");
+				user1Input = scanner.next().charAt(0);
+				System.out.println(user1Input);
+				if (user1Input=='X'||user1Input=='O'||user1Input=='x'||user1Input=='o')
+					break;
+		}
 		
+		if(user1Input=='X'||user1Input=='x')
+			user2Input = 'O';
+		else 
+			user2Input = 'X';
+		System.out.println("Player 1 Input : "+user1Input);
+		System.out.println("Player 2 Input : "+user2Input);
 	}
 }
